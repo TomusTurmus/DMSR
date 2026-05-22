@@ -21,6 +21,11 @@ We have tested our code with the following configurations
 
 ## Installation
 
+Build the Docker image from the repository root so the Dockerfile can see the full source tree:
+```
+docker build --no-cache -t dmsr:latest -f docker/Dockerfile .
+```
+
 Create virtual environment
 ```
 conda create -n dmsr python=3.6
